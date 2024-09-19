@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="te">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLOSSOM DEGREE COLLEGE</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #333;
+        }
+        p {
+            color: #555;
+        }
+        .courses, .special-features {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .images {
+            margin-top: 20px;
+        }
+        img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        /* Enhanced CSS for styling */
+        .btn {
+            display: inline-block;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: #45a049;
+        }
+        .hidden {
+            display: none;
+        }
+        .toggle-section {
+            margin-top: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<img src="C:\Users\arunt\OneDrive\Desktop\BLSM\Bls.jpg">
+
+<header>
+    <h2>ఒక నిర్ణీతస్థాయి ఉద్యోగానికి కనీస అర్హత డిగ్రీ...<br>అలాంటి డిగ్రీ చదువు ఎక్కడైనా... ఎవరైనా... ఎలాగైనా చేయొచ్చు..<br> కానీ.. క్రమశిక్షణ, లక్ష్యం, ఉన్నత విలువలతో కూడిన విద్యకు కేరాఫ్ అడ్రస్</h2>
+    <h1>BLOSSOM DEGREE COLLEGE</h1>
+    <p>(శ్రీ వేంకటేశ్వర విశ్వవిద్యాలయం అనుబంధం)</p>
+    <p>రాగిమణిపల్లి, ఆర్టీసీ బస్టాండ్ దగ్గర, ములకలచెరువు - 517390</p>
+</header>
+
+<div class="container">
+    <section>
+        <h2>కోర్సులు</h2>
+        <div class="courses">
+            <h3>B.Sc. కోర్సులు:</h3>
+            <ul>
+                <li>M.E.Cs.: గణితశాస్త్రం, ఎలక్ట్రానిక్స్, కంప్యూటర్ సైన్స్</li>
+                <li>B.Z.C.: వృక్షశాస్త్రం, జంతుశాస్త్రం, రసాయన శాస్త్రం</li>
+            </ul>
+            <h3>B.Com:</h3>
+            <p>కంప్యూటర్ అప్లికేషన్స్</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>ప్రత్యేకతలు</h2>
+        <div class="special-features hidden">
+            <ul>
+                <li>మా కళాశాలలో విద్యార్థులకు విశిష్ట తరగతి గదులు, పుస్తకాలు మరియు పరిశీలన తో కూడిన శిక్షణ.</li>
+                <li>విద్యార్థులకు సాంకేతిక రంగంలో 20 సులభమైన మరియు ఆధునిక విద్యా పద్దతులు.</li>
+                <li>SC, ST, BC, EBC మరియు మైనారిటీ విద్యార్థులకు స్కాలర్‌షిప్.</li>
+                <li>APSSDC ద్వారా స్కాలర్‌షిప్ అందుబాటులో లాంచ్ ల్యాప్‌టాప్‌లు, కంప్యూటర్లు.</li>
+                <li>విద్యార్థులకు కార్పొరేట్ కంపెనీలతో ఇంటర్న్షిప్ మరియు క్యాంపస్ ప్లేస్‌మెంట్స్.</li>
+            </ul>
+        </div>
+        <div class="toggle-section">
+            <button class="btn" onclick="toggleFeatures()">ప్రత్యేకతలు చూడండి</button>
+        </div>
+    </section>
+
+    <section>
+        <h2>మా తో సంప్రదించండి</h2>
+        <p>ఫోన్ నంబర్లు: 94945 47466, 83282 65049, 8309 531700</p>
+        <button class="btn" onclick="contactUs()">సంప్రదించండి</button>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2024 బ్లాసమ్ డిగ్రీ కళాశాల. అన్ని హక్కులు రిజర్వు చేయబడ్డాయి.</p>
+</footer>
+
+<!-- JavaScript for interactivity -->
+<script>
+    // Function to toggle the visibility of the special features
+    function toggleFeatures() {
+        const features = document.querySelector('.special-features');
+        const btn = document.querySelector('.toggle-section button');
+        if (features.classList.contains('hidden')) {
+            features.classList.remove('hidden');
+            btn.textContent = 'ప్రత్యేకతలు దాచండి';
+        } else {
+            features.classList.add('hidden');
+            btn.textContent = 'ప్రత్యేకతలు చూడండి';
+        }
+    }
+
+    // Simple JavaScript alert for contacting the college
+    function contactUs() {
+        alert('సంప్రదించడానికి: 94945 47466, 83282 65049, 8309 531700');
+    }
+</script>
+
+</body>
+</html>
